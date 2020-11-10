@@ -1,19 +1,26 @@
 # RQ3 Papers Read 
-Papers I read for RQ3
 
-**Haitao Yuan, Guoliang Li, Zhifeng Bao, and Ling Feng. 2020. [**Effective Travel Time Estimation: When Historical Trajectories over Road Networks Matter**](https://baozhifeng.net/papers/sigmod20-deepod.pdf). In Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data (SIGMOD '20).**
+**Haitao Yuan, Guoliang Li, Zhifeng Bao, and Ling Feng. 2020. [Effective Travel Time Estimation: When Historical Trajectories over Road Networks Matter](https://baozhifeng.net/papers/sigmod20-deepod.pdf). SIGMOD 2020**
 
 This paper explores the usage of a neural network to perform OD travel time estimation. That is, given a pair of origin and destination points, and a departure time, predict the travel time of the trip. 
 
 Prof. Bao has recommended an improvement to this task. In addition to predicting the travel time, we can also predict the travel path. I will elaborate more on the "Promising Ideas" section below. 
 
+**Fuat Basık, Hakan Ferhatosmanoğlu, and Buğra Gedik. 2020. [SLIM: Scalable Linkage of Mobility Data](https://dl.acm.org/doi/10.1145/3318464.3389761). SIGMOD 2020**
 
+This paper explores a unique problem of mobility data linkage. Mobility data linkage is synonymous to entity resolution. Given two location datasets (i.e. usage records from a location-based service), mobility data linkage finds entities (i.e. users) that has exactly one location data in both datasets. 
+
+It is surely a unique problem, but I don't find it too interesting. 
+
+**Shuang Wang and Hakan Ferhatosmanoglu. 2021. [PPQ-Trajectory: Spatio-temporal Quantization for Querying in Large Trajectory Repositories](http://vldb.org/pvldb/vol14/p215-wang.pdf). VLDB 2021 (preprint).**
+
+This paper explores the problem of approximate and exact spatio-temporal queries over compressed trajectories. I haven't read too much about it, but I don't think this is a good topic to explore because it's too similar to the second research question. Additionally, approaching this problem using a deep neural network doesn't make sense because using a vector representation is inherently approximation-based. 
 
 # Promising Ideas
 
 **Travel time and travel path prediction**
 
-Inspired by Prof. Bao's SIGMOD2020 paper. In addition to predicting the travel time given a pair of OD points, we also predict the route taken. 
+Inspired by Prof. Bao's SIGMOD2020 paper. In addition to predicting the travel time given a pair of OD points, we also predict the route taken. I like this research problem because it can be extended to a full system if we would like to explore that option. Additionally, I don't think the prediction of both travel time and travel path is a commonly explored problem. 
 
 **Step-by-step route recommendation** 
 
