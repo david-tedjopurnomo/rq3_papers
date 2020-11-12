@@ -16,6 +16,14 @@ It is surely a unique problem, but I don't find it too interesting.
 
 This paper explores the problem of approximate and exact spatio-temporal queries over compressed trajectories. I haven't read too much about it, but I don't think this is a good topic to explore because it's too similar to the second research question. Additionally, approaching this problem using a deep neural network doesn't make sense because using a vector representation is inherently approximation-based. 
 
+**An Yan and Bill Howe. 2019. [Fariness in Practice: A Survey on Equity in urban Mobility](http://sites.computer.org/debull/A19sept/p49.pdf). IEEE Data Engineering Bulletin.**
+
+**An Yan and Bill Howe. 2020. [Fairness-Aware Demand Prediction for New Mobility](https://ojs.aaai.org//index.php/AAAI/article/view/5458). AAAI 2020.**
+
+These two papers explore the topic of fairness in machine learning in the context of spatio-temporal prediction. In particular, the latter paper explores the usage of a hybrid Convolutional Neural Network to perform fairness-aware demand prediction. It captures both region-based fairness gap (RFG) and individual-based fairness gap (IFG) as two metrics of fairness. 
+
+While it is a novel and perhaps underexplored problem, the topic of machine learning fairness is not so interesting to me. I'll try to have a go at more papers to see if I'll be more interested, but this is low in the priority list compared to the other topics here. 
+
 # Promising Ideas
 
 **Travel time and travel path prediction**
