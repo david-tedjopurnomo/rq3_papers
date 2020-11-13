@@ -42,8 +42,14 @@ This task uses map-matched trajectories because it is a better representation of
 
 I would imagine that this task combines deep neural networks and graph theory. A deep neural network is used to predict the travel time of an edge at a certain time period (e.g. 5.00 to 5.30 PM). This will create a travel time dictionary. We use this dictionary in conjunction with graph theory to construct the optimal route and get the travel time. To compare this method with baseline models, we need to have a ground truth travel time for each edge. A simple approach is to take the mean travel time of all trajectories passing each edge. With the ground truth travel time for each edge calculated, we can compare our method with other baselines by getting the route recommendations and then summing the travel time of each edge. 
 
-**Travel time and travel path prediction**
+A difficulty with this problem is in justifying its novelty, since Google Maps may implement such approach already. Therefore, the tasks are: **doing some research on Google Maps' traffic information system and finding state-of-the-art route recommendation system to find how these kinds of research is typically done (i.e. ground truth, evaluation metric, current state-of-the-art, etc)**
+
+**Priority 4 (low priority): Travel time and travel path prediction**
 
 Inspired by Prof. Bao's SIGMOD2020 paper. In addition to predicting the travel time given a pair of OD points, we also predict the route taken. I like this research problem because it can be extended to a full system if we would like to explore that option. Additionally, I don't think the prediction of both travel time and travel path is a commonly explored problem. 
 
+The issue with this research topic is that once a travel path is predicted, predicting the travel time is trivial; we only need to find the average travel time for the edges in the predicted path and sum them together. Additionally, we need to also justify the need for these dual prediction. Is this a real and significant problem worth pursuing? 
 
+**Priority 5 (low priority): Next path prediction**
+
+This is a topic that was recommended by Prof. Bao, but there hasn't been any discussion regarding this in 12th November meeting. This is something that should be in very low priority, i.e. as a final resort. 
